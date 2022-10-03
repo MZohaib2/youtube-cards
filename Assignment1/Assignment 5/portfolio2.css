@@ -1,0 +1,1246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     background: #180052;      
+}
+.container{
+    height: 35vh;
+    width: 60vw;
+    margin: auto;
+    margin-top: 200px;
+    display: grid;
+    grid-gap: 5px;
+
+    grid-template-columns: 1.6fr 1.6fr 0.8fr 0.8fr 1fr 0.8fr;
+    grid-template-rows:1fr 1fr 1fr 1fr ;
+
+    grid-template-areas: 
+    "Mail Celender Internet store image image"
+    "people photos maps skydrive travel travel"
+    "massegning finance sports sports game cemra"
+    "dekstop weather news news music video";
+}
+.Mail{
+    height: 100px;
+    position: relative;
+    grid-area: Mail;
+}
+.flipcard_mail{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_mail:hover{
+    transform: rotateY(180deg);
+}
+.mail_front{
+    position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        background: #0091a5;        ;
+        font-family: sans-serif;
+        text-transform: capitalize;
+        color: #ffffff;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;           
+}
+.mail_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #0091a5;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mailback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.Mail_img{
+    height: 60px;
+}
+.Mail_p{
+    align-self: flex-start;
+    padding-left: 10px;
+}
+
+
+.Celender{
+    height: 100px;
+    position: relative;
+    grid-area: Celender;
+}
+.flipcard_Celender{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.Celender_front{
+    position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        background: #5a38b5;       ;
+        font-family: sans-serif;
+        text-transform: capitalize;
+        color: #ffffff;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;           
+}
+.Celender_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background:#5a38b5;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flipcard_Celender:hover{
+    transform: rotateY(180deg);
+}
+.Celender_img{
+    height: 60px;
+}
+.Celender_p{
+    align-self: flex-start;
+    padding-left: 10px;
+}
+.Celenderback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.Internet{
+    height: 100px;
+    position: relative;
+    grid-area: Internet;
+}
+.flipcard_Internet{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_Internet:hover{
+    transform: rotateY(180deg);
+}
+.Internet_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #2777ec;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;        
+}
+.Internet_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #2777ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Internet_img{
+    height: 60px;
+}
+.Internet_p{
+    align-self: flex-start;
+    padding-left: 10px;
+}
+.Internetback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.store{
+    height: 100px;
+    position: relative;
+    grid-area: store; 
+}
+.flipcard_store{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_store:hover{
+    transform: rotateY(180deg);
+}
+.store_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background-color: #009000;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;     
+}
+.store_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #009000    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store_img{
+    height: 60px;
+}
+.store_p{
+    align-self: flex-start;
+    padding-left: 10px;
+}
+.storeback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.image{
+    height: 100px;
+    position: relative;
+    grid-area: image; 
+    margin-left: 10%;
+}
+.flipcard_image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_image:hover{
+    transform: rotateY(180deg);
+}
+.image_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background-image: url(./download.jpg);
+    background-size: cover;
+    font-family: sans-serif; 
+    text-transform: capitalize;
+    color: #fff; 
+    font-size: 15px;
+    display: flex;
+}
+.image_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_p{
+    align-self: flex-end;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.imageback_p{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.people{
+    height: 100px;
+    position: relative;
+    grid-area: people; 
+}
+.flipcard_people{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_people:hover{
+    transform: rotateY(180deg);
+}
+.people_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #d44b28;
+    font-family: sans-serif; 
+    text-transform: capitalize;
+    color: #ffffff; 
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+.people_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #d44b28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.people_img{
+    height: 60px;
+}
+.people_p{
+    align-self: flex-start;
+    padding-left: 10px;
+}
+.peopleback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.photos{
+    height: 100px;
+    position: relative;
+    grid-area: photos;
+}
+.flipcard_photos{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_photos:hover{
+    transform: rotateY(180deg);
+}
+.photos_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #0091a5;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+}
+.photos_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #0091a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photos_img{
+    height: 70px;
+}
+.photos_p{
+     align-self: flex-start;
+    padding-left: 10px;
+}
+.photosback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.maps{
+    height: 100px;
+    position: relative;
+    grid-area: maps;
+}
+.flipcard_maps{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_maps:hover{
+    transform: rotateY(180deg);
+}
+.maps_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #9b00a3;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+
+}
+.maps_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #9b00a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maps_img{
+    height: 60px;
+}
+.maps_p{
+     align-self: flex-start;
+    padding-left: 10px;
+}
+.mapsback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+
+.skydrive{
+    height: 100px;
+    position: relative;
+    grid-area: skydrive;
+}
+.flipcard_skydrive{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_skydrive:hover{
+    transform: rotateY(180deg);
+}
+.skydrive_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #094fb7;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.skydrive_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #094fb7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skydrive_img{
+    height: 60px;
+}
+.skydrive_p{
+     align-self: flex-start;
+    padding-left: 10px;
+}
+.skydriveback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.travel{
+    height: 100px;
+    position: relative;
+    grid-area: travel;
+    margin-left: 10%;
+}
+.flipcard_travel{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_travel:hover{
+    transform: rotateY(180deg);
+}
+.travel_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #0091a5;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.travel_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #0091a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.travel_img{
+    height: 60px;
+}
+.travel_p{
+     align-self: flex-start;
+    padding-left: 10px;
+}
+.travelback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.massegning{
+    height: 100px;
+    position: relative;
+    grid-area: massegning;
+}
+.flipcard_massegning{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_massegning:hover{
+    transform: rotateY(180deg);
+}
+.massegning_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #9b00a3;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.massegning_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #9b00a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.massegning_img{
+    height: 60px;
+}
+.massegning_p{
+    align-self: flex-start;
+    padding-left: 10px;
+}
+.massegningback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.finance{
+    height: 100px;
+    position: relative;
+    grid-area: finance;
+}
+.flipcard_finance{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_finance:hover{
+    transform: rotateY(180deg);
+}
+.finance_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #009000;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.finance_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #009000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.finance_img{
+    height: 60px;
+}
+.finance_p{
+     align-self: flex-start;
+    padding-left: 10px;
+}
+.financeback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+
+.sports{
+    height: 100px;
+    position: relative;
+    grid-area: sports;
+}
+.flipcard_sports{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_sports:hover{
+    transform: rotateY(180deg);
+}
+.sports_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #5a38b5;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.sports_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #5a38b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sports_img{
+    height: 60px;
+}
+.sports_p{
+     align-self: flex-start;
+    padding-left: 10px;
+}
+.sportsback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.game{
+    height: 100px;
+    position: relative;
+    grid-area: game;
+    margin-left: 18.5%;
+}
+.flipcard_game{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_game:hover{
+    transform: rotateY(180deg);
+}
+.game_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #009000;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.game_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #009000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game_img{
+    height: 60px;
+}
+.game_P{
+     align-self: flex-start;
+    padding-left: 10px;
+}
+.gameback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+
+.cemra{
+    height: 100px;
+    position: relative;
+    grid-area: cemra; 
+}
+.flipcard_cemra{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_cemra:hover{
+    transform: rotateY(180deg);
+}
+.cemra_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #9b00a3;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.cemra_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #9b00a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cemraback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.cemra_img{
+    height: 60px;
+}
+.cemra_p{
+     align-self: flex-start;
+    padding-left: 10px;
+}
+
+
+
+.dekstop{
+    height: 100px;
+    position: relative;
+    grid-area: dekstop; 
+}
+.flipcard_dekstop{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_dekstop:hover{
+    transform: rotateY(180deg);
+}
+.dekstop_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background-image: url(./daisy-5383056__340.webp);
+    background-position: center;
+    grid-area: dekstop;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+}
+.dekstop_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dekstop_p{
+    align-self: flex-end;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.dekstopback_p{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+
+.weather{
+    height: 100px;
+    position: relative;
+    grid-area: weather; 
+}
+.flipcard_weather{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_weather:hover{
+    transform: rotateY(180deg);
+}
+.weather_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #2777ec;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.weather_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #2777ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather_img{
+    height: 60px;
+}
+.weather_P{
+    align-self: flex-start;
+    padding-left: 10px;
+}
+.weatherback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.news{
+    height: 100px;
+    position: relative;
+    grid-area: news; 
+}
+.flipcard_news{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_news:hover{
+    transform: rotateY(180deg);
+}
+.news_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #b61c44;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.news_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #b61c44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news_img{
+    height: 60px;
+}
+.news_p{
+    align-self: flex-start;
+    padding-left: 10px;
+}
+.newsback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.music{
+    height: 100px;
+    position: relative;
+    grid-area: music;
+    margin-left: 18.5%;
+}
+.flipcard_music{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_music:hover{
+    transform: rotateY(180deg);
+}
+.music_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #d44b28;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.music_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #d44b28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music_img{
+    height: 60px;
+
+}
+.music_p{
+     align-self: flex-start;
+     padding-left: 10px;
+}
+.musicback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+.video{
+    height: 100px;
+    position: relative;
+    grid-area: video;
+}
+.flipcard_video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.flipcard_video:hover{
+    transform: rotateY(180deg);
+}
+.video_front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #b61c44;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.video_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #b61c44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video_img{
+    height: 60px;
+}
+.video_p{
+     align-self: flex-start;
+    padding-left: 10px;
+}
+.videoback_p{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+@media only screen and (min-width: 550px) and (max-width: 950px) {
+    .container{
+        display: grid;
+        grid-gap: 5px;
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr repeat(12) ;
+    
+        grid-template-areas: 
+        "Mail Celender"
+        "Internet store"
+        "image image"
+        "people photos"
+        "maps skydrive"
+        "travel travel"
+        "massegning finance" 
+        "sports sports"
+        "game cemra"
+        "dekstop weather"
+        "news news"
+        "music video";
+    }
+    .image{
+       -webkit-margin-start: 0px;
+    }
+    .travel{
+        -webkit-margin-start: 0px;
+    }
+    .game{
+        -webkit-margin-start: 0px;
+    }
+    .music{
+        -webkit-margin-start: 0px;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .container {
+        display: grid;
+        grid-gap: 5px;
+    
+        grid-template-columns: 1fr ;
+        grid-template-rows:1fr repeat(20) ;
+    
+        grid-template-areas: 
+        "Mail"
+        "Celender"
+        "Internet"
+        "store"
+        "image"
+        "people"
+        "photos"
+        "maps"
+        "skydrive"
+        "travel"
+        "massegning"
+        "finance" 
+        "sports"
+        "game"
+        "cemra"
+        "dekstop"
+        "weather"
+        "news"
+        "music"
+        "video";
+    }
+    .image{
+        -webkit-margin-start: 0px;
+     }
+     .travel{
+         -webkit-margin-start: 0px;
+     }
+     .game{
+         -webkit-margin-start: 0px;
+     }
+     .music{
+         -webkit-margin-start: 0px;
+     }
+  }
